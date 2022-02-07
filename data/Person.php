@@ -2,6 +2,8 @@
 
 class Person
 {
+    const AUTHOR = "Ramadhan"; // Constant nempel ke class, tidak bisa diakses lewat objek
+
     var string $name;
     var ?string $address = null;
     var string $country = "Indonesia";
