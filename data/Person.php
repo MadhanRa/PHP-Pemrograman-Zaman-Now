@@ -1,7 +1,5 @@
 <?php
 
-class Person {
-
+class Person
+{
 }
-
-?>
