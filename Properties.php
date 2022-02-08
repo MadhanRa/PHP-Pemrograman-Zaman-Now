@@ -1,10 +1,7 @@
 <?php
 require_once "data/Person.php";
 
-$person = new Person();
-$person->name = 'John';
-$person->address = 'Sunda';
-$person->country = 'Indo';
+$person = new Person("John", "Sunda");
 
 var_dump($person);
 
@@ -12,10 +9,7 @@ echo "Name: $person->name" . PHP_EOL;
 echo "Address: $person->address" . PHP_EOL;
 echo "Country: $person->country" . PHP_EOL;
 
-$person2 = new Person();
-$person2->name = 'Siti';
-$person2->address = 'Jawa';
-$person2->country = 'Indo';
+$person2 = new Person("Siti", "Jawa");
 
 var_dump($person2);
 
