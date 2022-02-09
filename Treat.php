@@ -10,3 +10,5 @@ $person->hello("Tuti");
 
 $person->name = "Bambank";
 var_dump($person);
+
+$person->run();
