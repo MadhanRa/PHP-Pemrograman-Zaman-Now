@@ -8,16 +8,24 @@ class Data implements IteratorAggregate
     private string $third = "Third";
     protected string $fourth = "Fourth";
 
+    // public function getIterator(): Iterator
+    // {
+    //     $array = [
+    //         "first" => $this->first,
+    //         "second" => $this->second,
+    //         "third" => $this->third,
+    //         "fourth" => $this->fourth,
+    //     ];
+
+    //     return new ArrayIterator($array);
+    // }
+
     public function getIterator(): Iterator
     {
-        $array = [
-            "first" => $this->first,
-            "second" => $this->second,
-            "third" => $this->third,
-            "fourth" => $this->fourth,
-        ];
-
-        return new ArrayIterator($array);
+        yield "first" => $this->first;
+        yield "second" => $this->second;
+        yield "third" => $this->third;
+        yield "fourth" => $this->fourth;
     }
 }
 
