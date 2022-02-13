@@ -7,7 +7,6 @@ $array = [
 ];
 
 $object = (object) $array;
-var_dump($object);
 
 echo "First Name: " . $object->firstName . PHP_EOL;
 echo "Middle Name: " . $object->middleName . PHP_EOL;
